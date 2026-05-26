@@ -33,6 +33,27 @@ If an actual image generation tool is available, use it to generate real scene c
 
 Do not use local scripts, SVG, ASCII art, geometric drawing, or placeholders as final images.
 
+## Image2 Direct Generation
+
+When Image2 / image generation is available, do not stop at prompts.
+
+Stage 1: generate no-text base images.
+
+- One image per page, 9 pages total.
+- 1024x1536 portrait target.
+- 2 columns x 3 rows, 6 panels per page.
+- No Chinese text, no watermark, no caption boxes, no empty speech bubbles.
+- Clear story action in every page.
+
+Stage 2: create final text-overlaid upload images.
+
+- Add Chinese narration, dialogue, or author-note text after base image generation.
+- Use no-background outlined text.
+- Do not use white boxes, black bars, or large translucent backings.
+- Output 9 final upload images.
+
+Only if image generation is unavailable should the skill output image worker prompts instead.
+
 Local scripts may only do:
 
 - Text overlay.
@@ -65,3 +86,4 @@ Do not pretend image files exist. Provide:
 4. QA checklist.
 5. Clear statement that images were not generated in the current environment.
 
+If Image2 output is not a six-panel comic page, not a realistic life scene, has severely broken characters, contains garbled text, or repeatedly fails QA, regenerate the affected page. If repeated regeneration still fails, record the failure in QA and do not pass low-quality images as final output.

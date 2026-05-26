@@ -29,6 +29,8 @@ fable-one-draft-output/
 ## Xiaohongshu QA
 
 - 9 pages complete.
+- 9 no-text base images actually generated when image generation is available.
+- 9 final text-overlaid upload images actually generated when image generation is available.
 - 6 panels per page.
 - Page 9 is author note.
 - Realistic scene comic style.
@@ -37,6 +39,22 @@ fable-one-draft-output/
 - No fake image paths if images are not generated.
 - Subtitles use no-background outlined text.
 - No white caption boxes or black bars.
+- No large translucent backing.
+- Text does not cover faces, hand actions, key objects, or panel borders.
+- Delivery does not stop at no-text base images only.
+
+## Required Delivery Items
+
+- 9 no-text base images.
+- 9 final text-overlaid upload images.
+- Per-page image prompts.
+- Negative prompt.
+- Text overlay list.
+- Xiaohongshu publishing copy.
+- Zhihu fable article.
+- Zhihu image insertion plan.
+- Contact sheet.
+- QA report.
 
 ## Zhihu QA
 
@@ -54,4 +72,3 @@ fable-one-draft-output/
 - No credential access.
 - No tokens, cookies, verification codes, QR codes, passwords, App Secrets, private keys, or browser state.
 - No private local paths or private project memory.
-

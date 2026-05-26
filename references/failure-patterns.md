@@ -36,9 +36,20 @@ Problem: The output references image paths even though no images were generated.
 
 Fix: If images were not generated, output an insertion plan and state that images are pending.
 
+## Has Image2 But Only Outputs Prompts
+
+Problem: The current Codex environment has image generation, but the agent only writes image prompts.
+
+Fix: Call Image2 / image generation directly. Generate 9 no-text base pages first, then create 9 final text-overlaid upload pages.
+
+## Stops At No-Text Base Images
+
+Problem: The agent generates base images but never adds Chinese narration, dialogue, or author-note text.
+
+Fix: Final Xiaohongshu delivery requires both base images and text-overlaid upload images. No-text base images alone are not complete.
+
 ## Leaks Private Context
 
 Problem: The output references local paths, private documents, private memory, or account environment.
 
 Fix: Treat the user as an external user and rely only on the provided public skill.
-

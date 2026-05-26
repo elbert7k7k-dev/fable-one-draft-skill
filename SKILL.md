@@ -30,13 +30,14 @@ Produce:
 5. Three story directions and auto-selected best direction.
 6. Xiaohongshu 9-page comic script, 6 panels per page, page 9 as author note.
 7. Realistic-scene image prompts and negative prompts.
-8. If an actual image generation tool is available, generate images directly; otherwise say the environment cannot directly generate images and provide complete image worker prompts.
-9. Text overlay instructions using no-background outlined text.
-10. Xiaohongshu publishing copy.
-11. Zhihu fable article derived from the same comic story.
-12. Zhihu image insertion suggestions.
-13. Delivery folder structure.
-14. QA checklist.
+8. If an actual Image2 / image generation tool is available, call it to generate 9 no-text base comic pages.
+9. After base pages are generated, add Chinese captions/dialogue and produce 9 final text-overlaid upload pages.
+10. Text overlay instructions using no-background outlined text.
+11. Xiaohongshu publishing copy.
+12. Zhihu fable article derived from the same comic story.
+13. Zhihu image insertion suggestions.
+14. Delivery folder structure.
+15. QA checklist.
 
 ## Hard Boundaries
 
@@ -45,8 +46,30 @@ Produce:
 - Do not request, read, display, or store tokens, cookies, verification codes, QR codes, passwords, App Secrets, private keys, browser credentials, or account state.
 - Do not use local script drawings, SVG, ASCII art, geometric placeholders, PPT graphics, or concept cards as final comic images.
 - Do not claim images exist if they were not actually generated.
+- Do not stop at no-text base images. Final Xiaohongshu delivery requires both no-text base images and final Chinese text-overlaid upload images.
 
 ## Automation Rule
 
 Candidate topics and story directions are records, not pause points. Continue automatically unless there is a safety risk, credential/login request, missing required asset, impossible image task, or explicit user request for manual confirmation.
 
+## Image2 Execution Rule
+
+When Image2, image generation, or an equivalent bitmap generation tool is available in the current Codex environment, this skill must call it instead of merely writing prompts.
+
+Generate each page separately:
+
+- 9 pages total.
+- 1024x1536 portrait target.
+- 2 columns x 3 rows, 6 panels per page.
+- Chinese realistic low-saturation watercolor comic style.
+- Real adults and real Chinese daily-life environments.
+- No text, no watermark, no caption boxes in the base image.
+
+Then complete the second stage:
+
+- Add Chinese captions/dialogue/author-note text locally or with an appropriate image-editing step.
+- Use no-background outlined text.
+- No white caption boxes, no black bars, no large translucent backing.
+- Output 9 final upload images.
+
+If the image tool is unavailable, explicitly say so and output complete image worker prompts, negative prompts, overlay text list, and QA criteria.
