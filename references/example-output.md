@@ -1,0 +1,44 @@
+# Example Output Shape
+
+This is a compact, sanitized example. It is not a real case.
+
+## Topic
+
+过度准备
+
+## Core Mechanism
+
+Over-preparation happens when a person mistakes the safety of planning for real progress. Preparation matters, but it must be calibrated by real feedback.
+
+## Comic Direction
+
+A young person wants to run a breakfast stand. He keeps polishing menus, tools, and plans. An older neighbor sets up a simple folding table first and learns from customers every morning. The young person finally realizes that feedback changes direction faster than imaginary perfection.
+
+## Page 1 Sample
+
+1. The young person writes a breakfast stand plan under a desk lamp.
+2. The notebook says "startup plan".
+3. He draws menu categories and customer flow.
+4. The phone shows late night.
+5. He rubs his eyes.
+6. Caption: He felt almost ready.
+
+## Page 9 Author Note Sample
+
+1. Preparation is not bad.
+2. But preparation cannot replace reality.
+3. Real feedback calibrates direction.
+4. Try a very small version first.
+5. Adjust while doing.
+6. Do not mistake safety for progress.
+
+## Xiaohongshu Copy Sample
+
+Title: 过度准备，是把安全感误认为进度
+
+Sometimes we are not lazy. We are just always preparing. But the first real customer comment can change more than the eighteenth version of a plan.
+
+## Zhihu Title Sample
+
+那个写了十八版菜单的人，输给了一张旧折叠桌
+

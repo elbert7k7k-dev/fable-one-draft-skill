@@ -1,0 +1,4 @@
+display_name: 寓言故事一稿通
+short_description: 自动把中文短词条转成小红书漫画分镜和知乎寓言故事。
+default_prompt: 请使用 fable-one-draft-skill，主题为空，自动选题并完整生成小红书漫画分镜、图片提示词、小红书文案、知乎寓言成稿和 QA。
+
