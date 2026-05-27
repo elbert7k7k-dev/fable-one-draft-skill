@@ -30,6 +30,8 @@ fable-one-draft-skill/
 
 ## 使用
 
+使用前提：需要 Codex 或兼容 Codex Skill 的环境；如果要实际生成漫画图片，还需要当前环境能调用 Image2 / image generation / 等价图片生成工具。没有图片生成能力时，本 Skill 只能输出完整图片 worker 提示词、负面提示词、叠字清单和 QA 标准，并明确说明未实际生成图片。
+
 在 Codex 新对话中输入：
 
 ```text

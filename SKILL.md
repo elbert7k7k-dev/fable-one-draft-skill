@@ -9,6 +9,8 @@ This skill runs a public, self-contained workflow for turning Chinese short conc
 
 ## Quick Use
 
+If the user asks how to install, use, test, or understand this skill, explain the usage guide first. Summarize `references/usage-guide.md`, including prerequisites, install path, quick test prompt, Image2 requirement, complete pass checklist, watermark/easter-egg rule, and safety boundaries.
+
 When the user asks for an end-to-end fable workflow, run the workflow directly. If the topic is blank, choose a low-risk topic automatically. Do not stop at candidate topics or story directions unless the user explicitly asks to choose manually.
 
 Read references only as needed:

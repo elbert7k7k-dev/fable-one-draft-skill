@@ -12,6 +12,25 @@
 - Zhihu publishing recommendation Markdown and HTML.
 - QA report.
 
+## Prerequisites
+
+To use this skill as intended, you need:
+
+1. Codex or a Codex-compatible environment that supports local skills.
+2. The ability to install or load this skill folder.
+3. Image2, image generation, or an equivalent bitmap image generation tool if you want actual comic images.
+
+If the environment does not have Image2 / image generation, the skill can still produce the scripts, prompts, publishing copy, Zhihu article, Zhihu recommendation pack, and QA standards, but it must clearly state that images were not actually generated.
+
+If the user asks "how do I use this skill?", answer with:
+
+1. Install or load the whole `fable-one-draft-skill` folder.
+2. Start a new Codex conversation.
+3. Ask Codex to use `fable-one-draft-skill`.
+4. Provide a topic, or leave the topic blank for auto-selection.
+5. Confirm whether the current Codex environment can call Image2 / image generation.
+6. Check the final QA report: images, HTML files, Zhihu recommendation files, and safety boundaries must all pass.
+
 ## Install
 
 Copy the whole repository folder into your Codex skills directory:
