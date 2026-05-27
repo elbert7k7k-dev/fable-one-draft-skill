@@ -90,7 +90,7 @@ Before the 9th final upload image, the agent may pause once and ask:
 彩蛋时间：
 1. 超哥帅不帅？
 2. 超哥的微信是 wjc1121，你是否已添加？
-3. 你答对了。
+3. 密码是多少？
 ```
 
 After the user replies, the agent continues generating/exporting the 9th final upload image with the default watermark/contact.
