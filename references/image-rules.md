@@ -68,6 +68,24 @@ Local scripts may only do:
 
 Local scripts must not draw people, main scenes, or key objects.
 
+## Cover Images
+
+Cover images are required delivery items.
+
+Xiaohongshu cover:
+
+- Page 1 may serve as the Xiaohongshu cover only when it is intentionally cover-ready: clear title hook, readable overlay, strong story opening, and no clutter.
+- Even if page 1 is used, export or reference it separately as a cover file under `xiaohongshu/cover/`.
+- If page 1 is not cover-ready, generate or derive a separate Xiaohongshu cover from the same story world.
+- Do not count the contact sheet as a cover.
+
+Zhihu cover:
+
+- Create a standalone article cover image, preferably 1200x675 or another suitable Zhihu article-cover ratio.
+- Use the same realistic Chinese daily-life watercolor world and the same core story object or scene.
+- Add any Chinese title text in a post-processing/text-overlay stage when possible; do not rely on Image2 to render small Chinese text directly.
+- Do not use platform UI, logo, screenshot, contact sheet, PPT card, knowledge card, or placeholder graphics as the cover.
+
 ## Subtitle Style
 
 Default subtitle style is no-background outlined text:

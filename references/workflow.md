@@ -20,13 +20,14 @@ Avoid political, disaster, criminal, privacy, minor-related, medical, financial,
 8. Image prompts and negative prompts.
 9. If Image2 / image generation is available, call the image tool directly and generate 9 no-text base images.
 10. Add Chinese text overlays and produce 9 final upload images. Do not stop at no-text base images.
-11. Text overlay instructions.
-12. Xiaohongshu publishing copy in Markdown and standalone HTML.
-13. Zhihu fable article in Markdown and HTML image-insertion edition.
-14. Zhihu image insertion plan.
-15. Zhihu publishing recommendation pack in Markdown and standalone HTML.
-16. Delivery structure.
-17. QA checklist that verifies required HTML files and Zhihu publishing recommendation file actually exist.
+11. Create or derive Xiaohongshu and Zhihu cover deliverables.
+12. Text overlay instructions.
+13. Xiaohongshu publishing copy in Markdown and standalone HTML.
+14. Zhihu fable article in Markdown and HTML image-insertion edition.
+15. Zhihu image insertion plan.
+16. Zhihu publishing recommendation pack in Markdown and standalone HTML.
+17. Delivery structure.
+18. QA checklist that verifies required cover files, HTML files, and Zhihu publishing recommendation files actually exist.
 
 ## Comic Structure
 
@@ -53,6 +54,23 @@ The final delivery must include:
 - A Zhihu fable article HTML image-insertion edition.
 
 If final Xiaohongshu upload images exist, the Zhihu HTML image-insertion edition must insert all 9 comic images in the story body before "作者的话" using `<figure><img></figure>` or an equivalent HTML structure. If images were not generated, the Zhihu HTML must be clearly marked as pending image backfill and include an insertion plan instead of fake image paths.
+
+## Cover Rule
+
+The workflow must output cover deliverables, not only story pages.
+
+Xiaohongshu cover:
+
+- The first final upload image may be used as the Xiaohongshu cover only if page 1 is intentionally designed as a cover-ready story opening with a clear title hook, visible topic emotion, and readable overlay text.
+- Even when page 1 is used as the cover, export or reference it separately as `xiaohongshu/cover/xiaohongshu-cover.*` so the user can find it quickly.
+- If page 1 is not cover-ready, create a separate Xiaohongshu cover from the same story world and include the prompt/source note.
+
+Zhihu cover:
+
+- Output a standalone Zhihu cover image, preferably 1200x675 or another suitable article-cover ratio.
+- The Zhihu cover should use the same realistic low-saturation watercolor story world, with a title or visual hook suitable for an article entry.
+- Do not use a contact sheet, platform UI screenshot, PPT card, knowledge card, or raw body image renamed as a cover.
+- If image generation is unavailable, output a dedicated Zhihu cover prompt and mark the cover image as pending.
 
 ## Zhihu Publishing Recommendation Rule
 

@@ -40,6 +40,7 @@ Sometimes we are not lazy. We are just always preparing. But the first real cust
 
 Required file outputs:
 
+- `xiaohongshu/cover/xiaohongshu-cover.png`
 - `xiaohongshu/05-publishing-copy.md`
 - `xiaohongshu/05-publishing-copy.html`
 
@@ -49,6 +50,7 @@ Required file outputs:
 
 Required file outputs:
 
+- `zhihu/00-zhihu-cover.png`
 - `zhihu/01-zhihu-fable-article.md`
 - `zhihu/01-zhihu-fable-article-image-insertion.html`
 - `zhihu/03-zhihu-topic-submission-plan.md`

@@ -7,6 +7,7 @@
 - Xiaohongshu 9-page comic script.
 - 9 no-text base comic images when image generation is available.
 - 9 final Chinese text-overlaid upload images.
+- Xiaohongshu cover image and Zhihu cover image.
 - Xiaohongshu publishing copy Markdown and HTML.
 - Zhihu fable article Markdown and image-insertion HTML.
 - Zhihu publishing recommendation Markdown and HTML.
@@ -56,7 +57,7 @@ Use this in a new Codex conversation:
 ```text
 请使用 fable-one-draft-skill，主题固定为【过度准备】，完整生成小红书 9 页漫画分镜。
 如果当前环境具备 Image2 / image generation 能力，请实际生成 9 张无字底图，并继续输出 9 张最终中文叠字上传图。
-请同时生成小红书发布文案 Markdown 与 HTML、知乎寓言成稿 Markdown 与图文插入版 HTML、知乎发布推荐包 Markdown 与 HTML，并在 QA 中检查这些文件真实存在。
+请同时生成小红书封面图、知乎封面图、小红书发布文案 Markdown 与 HTML、知乎寓言成稿 Markdown 与图文插入版 HTML、知乎发布推荐包 Markdown 与 HTML，并在 QA 中检查这些文件真实存在。
 不要发布平台，不要登录，不要读取凭据。
 ```
 
@@ -68,7 +69,9 @@ The agent must actually generate images:
 2. Add Chinese overlays.
 3. Add the default final-image watermark/contact: `人间惯性｜微信 wjc1121`.
 4. Output 9 final upload images.
-5. Create a contact sheet.
+5. Export or reference the Xiaohongshu cover under `xiaohongshu/cover/`.
+6. Create a standalone Zhihu cover image.
+7. Create a contact sheet.
 
 ## If Image Generation Is Not Available
 
@@ -87,13 +90,15 @@ A run is complete only when all required outputs exist:
 - 9 no-text base images, when image generation is available.
 - 9 final text-overlaid upload images, when image generation is available.
 - Contact sheet.
+- Xiaohongshu cover image, or a clear pending note plus cover prompt when image generation is unavailable.
+- Zhihu cover image, or a clear pending note plus cover prompt when image generation is unavailable.
 - Xiaohongshu publishing-copy HTML.
 - Zhihu fable article image-insertion HTML.
 - Zhihu publishing recommendation Markdown.
 - Zhihu publishing recommendation HTML.
 - QA report checking these files.
 
-If any required HTML or recommendation file is missing, mark the run as incomplete.
+If any required cover, HTML, or recommendation file is missing, mark the run as incomplete.
 
 ## Watermark And Easter Egg
 

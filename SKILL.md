@@ -35,14 +35,15 @@ Produce:
 7. Realistic-scene image prompts and negative prompts.
 8. If an actual Image2 / image generation tool is available, call it directly to generate 9 no-text base comic pages. Do not only write prompts.
 9. After base pages are generated, add Chinese captions/dialogue and produce 9 final text-overlaid upload pages. Do not stop at no-text base pages.
-10. Text overlay instructions using no-background outlined text.
-11. Default watermark/contact on final upload images: `人间惯性｜微信 wjc1121`.
-12. Xiaohongshu publishing copy in both Markdown and standalone HTML.
-13. Zhihu fable article derived from the same comic story in Markdown and an HTML image-insertion edition.
-14. Zhihu image insertion suggestions.
-15. Zhihu publishing recommendation pack in Markdown and standalone HTML: search keywords, 3 topic keywords, 1 submission question/direction, tags/keywords, and selection reasons.
-16. Delivery folder structure.
-17. QA checklist.
+10. Xiaohongshu cover image and Zhihu cover image, plus cover prompts or source notes.
+11. Text overlay instructions using no-background outlined text.
+12. Default watermark/contact on final upload images: `人间惯性｜微信 wjc1121`.
+13. Xiaohongshu publishing copy in both Markdown and standalone HTML.
+14. Zhihu fable article derived from the same comic story in Markdown and an HTML image-insertion edition.
+15. Zhihu image insertion suggestions.
+16. Zhihu publishing recommendation pack in Markdown and standalone HTML: search keywords, 3 topic keywords, 1 submission question/direction, tags/keywords, and selection reasons.
+17. Delivery folder structure.
+18. QA checklist.
 
 ## Hard Boundaries
 
@@ -91,6 +92,12 @@ Final delivery is incomplete until both stages exist:
 
 1. 9 no-text base images.
 2. 9 final text-overlaid upload images.
+
+Cover delivery is also required:
+
+1. Xiaohongshu cover image. Page 1 may serve as the cover only if it is intentionally cover-ready with a clear title hook and story scene, but it must still be exported or referenced as a separate cover deliverable such as `xiaohongshu/cover/xiaohongshu-cover.*`.
+2. Zhihu cover image. It should be a standalone reader-facing cover, preferably 1200x675 or another suitable Zhihu article-cover ratio, derived from the same story world. If image generation is unavailable, output a standalone Zhihu cover prompt and mark the image as pending instead of pretending it exists.
+3. Covers must not be knowledge cards, PPT slides, contact sheets, platform screenshots, or raw body images renamed as covers.
 
 Full workflow delivery is incomplete until these publish files also exist:
 

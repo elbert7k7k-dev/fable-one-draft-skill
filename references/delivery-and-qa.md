@@ -10,18 +10,23 @@ fable-one-draft-output/
     02-topic-selection-and-risk-check.md
     03-core-mechanism.md
   xiaohongshu/
+    00-xiaohongshu-cover-prompt.md
     01-9-page-comic-script.md
     02-image-worker-prompt.md
     03-negative-prompt.md
     04-text-overlay-list.md
     05-publishing-copy.md
     05-publishing-copy.html
+    cover/
+      xiaohongshu-cover.png
     images/
       no-text/
       final-with-text/
       contact-sheet/
     image-generation-status.md
   zhihu/
+    00-zhihu-cover-prompt.md
+    00-zhihu-cover.png
     01-zhihu-fable-article.md
     01-zhihu-fable-article-image-insertion.html
     02-image-insertion-plan.md
@@ -49,6 +54,9 @@ fable-one-draft-output/
 - Delivery does not stop at no-text base images only.
 - QA report distinguishes no-text base images from final text-overlaid upload images.
 - Contact sheet or equivalent overview exists.
+- Xiaohongshu cover image exists, or is explicitly pending when image generation is unavailable.
+- If page 1 is used as the Xiaohongshu cover, it is exported or referenced separately under `xiaohongshu/cover/`.
+- Xiaohongshu cover is not a contact sheet, PPT card, knowledge card, platform screenshot, or fake placeholder.
 - Xiaohongshu publishing-copy HTML file actually exists.
 - Images alone are not treated as a complete delivery.
 - Markdown-only Xiaohongshu copy is not treated as a complete delivery.
@@ -62,9 +70,13 @@ fable-one-draft-output/
 - Text overlay list.
 - Xiaohongshu publishing copy.
 - Xiaohongshu publishing-copy HTML.
+- Xiaohongshu cover prompt.
+- Xiaohongshu cover image, or a pending note if image generation is unavailable.
 - Zhihu fable article.
 - Zhihu fable article HTML image-insertion edition.
 - Zhihu image insertion plan.
+- Zhihu cover prompt.
+- Zhihu cover image, or a pending note if image generation is unavailable.
 - Zhihu topic/submission recommendation plan Markdown.
 - Zhihu topic/submission recommendation plan HTML.
 - Contact sheet.
@@ -80,6 +92,9 @@ If image generation is unavailable, the delivery must explicitly state that imag
 - Only one "作者的话" after the story.
 - Derived from the same comic story.
 - Image insertion plan provided.
+- Zhihu cover image exists, or is explicitly pending when image generation is unavailable.
+- Zhihu cover prompt exists.
+- Zhihu cover is a standalone article cover, not a contact sheet, body screenshot, platform UI screenshot, PPT card, knowledge card, or fake placeholder.
 - Zhihu HTML image-insertion edition actually exists.
 - If final upload images exist, the Zhihu HTML contains 9 `<figure><img></figure>` image insertions or equivalent image blocks.
 - Image insertions appear in the fable story body before "作者的话".
@@ -99,13 +114,17 @@ The run can be marked as a complete pass only if all of these are true:
 - 9 no-text base images exist, when image generation is available.
 - 9 final text-overlaid upload images exist, when image generation is available.
 - Contact sheet exists.
+- Xiaohongshu cover deliverable exists, or is explicitly pending because image generation is unavailable.
+- Zhihu cover deliverable exists, or is explicitly pending because image generation is unavailable.
 - Xiaohongshu publishing-copy HTML exists.
 - Zhihu fable article HTML image-insertion edition exists.
 - Zhihu topic/submission recommendation plan Markdown exists.
 - Zhihu topic/submission recommendation plan HTML exists.
-- QA report explicitly checks the existence of the Xiaohongshu HTML, Zhihu article HTML, Zhihu recommendation Markdown, and Zhihu recommendation HTML.
+- QA report explicitly checks the existence of the Xiaohongshu cover, Zhihu cover, Xiaohongshu HTML, Zhihu article HTML, Zhihu recommendation Markdown, and Zhihu recommendation HTML.
 
 If the Zhihu publishing recommendation HTML is missing, mark the delivery as incomplete even if all images, the Zhihu article HTML, and the Xiaohongshu publishing-copy HTML were generated.
+
+If either cover is missing and there is no explicit image-generation-unavailable pending note plus cover prompt, mark the delivery as incomplete. If image generation is available, missing covers cannot pass.
 
 If any required HTML file or the Zhihu topic/submission plan Markdown is missing, mark the delivery as incomplete even if all images were generated.
 

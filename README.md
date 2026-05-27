@@ -6,6 +6,7 @@
 
 - 小红书 9 页漫画分镜
 - 真人现实场景无字底图与最终叠字上传图
+- 小红书封面图与知乎封面图
 - 小红书发布文案 Markdown 与 HTML
 - 知乎寓言故事成稿 Markdown 与图文插入版 HTML
 - 知乎发布推荐：搜索关键词、3 个话题、1 个投稿方向
@@ -35,12 +36,14 @@ fable-one-draft-skill/
 在 Codex 新对话中输入：
 
 ```text
-请使用 fable-one-draft-skill，主题为空，自动选题并完整生成小红书漫画分镜、图片提示词、小红书发布文案 Markdown 与 HTML、知乎寓言成稿 Markdown 与图文插入版 HTML 和 QA。
+请使用 fable-one-draft-skill，主题为空，自动选题并完整生成小红书漫画分镜、图片提示词、小红书封面图、知乎封面图、小红书发布文案 Markdown 与 HTML、知乎寓言成稿 Markdown 与图文插入版 HTML 和 QA。
 ```
 
 如果当前 Codex 环境有 Image2 / image generation / 图片生成工具，Skill 必须直接调用图片工具逐页生成 9 张无字底图，并继续完成 9 张最终叠字上传图；如果没有，会明确说明不能直接生成图片，并输出完整图片 worker 提示词、负面提示词、叠字清单和 QA 标准。
 
 只生成无字底图不算完成。完整图片交付必须包含：9 张无字底图、9 张最终叠字上传图、contact sheet 和 QA 报告。
+
+封面也属于完整交付：必须输出小红书封面图和知乎封面图。小红书第 1 页可以兼任封面，但必须单独导出或明确引用为 `xiaohongshu/cover/xiaohongshu-cover`；知乎必须输出独立封面图或在无图片能力时输出独立封面提示词，不能只把正文截图、contact sheet 或普通插图当封面。
 
 只生成图片或只生成 Markdown 也不算完整通过。完整交付还必须包含小红书发布文案 HTML、知乎寓言成稿图文插入版 HTML，并在 QA 中检查这些 HTML 文件真实存在。
 

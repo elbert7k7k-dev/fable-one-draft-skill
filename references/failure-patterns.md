@@ -83,3 +83,9 @@ Fix: Markdown is only a backup/readable source. Complete delivery requires stand
 Problem: The run produces the Zhihu article but omits the publishing-side recommendation: search keywords, topics, and submission direction.
 
 Fix: Add a Zhihu topic/submission plan with search keywords, exactly 3 recommended topic keywords, exactly 1 submission question/direction, and reasons. If live Zhihu browsing is unavailable, mark it as pending final verification instead of inventing heat data.
+
+## Missing Covers
+
+Problem: The run produces story images and articles but no Xiaohongshu cover or Zhihu cover.
+
+Fix: Covers are required delivery items. Export or reference a cover-ready page 1 as `xiaohongshu/cover/xiaohongshu-cover.*`, or create a separate Xiaohongshu cover. Also create a standalone Zhihu article cover, preferably 1200x675. If image generation is unavailable, output dedicated cover prompts and mark cover images as pending instead of pretending they exist.
