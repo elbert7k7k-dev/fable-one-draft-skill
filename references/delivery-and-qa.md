@@ -19,6 +19,7 @@ fable-one-draft-output/
       no-text/
       final-with-text/
       contact-sheet/
+    image-generation-status.md
   zhihu/
     01-zhihu-fable-article.md
     02-image-insertion-plan.md
@@ -42,6 +43,8 @@ fable-one-draft-output/
 - No large translucent backing.
 - Text does not cover faces, hand actions, key objects, or panel borders.
 - Delivery does not stop at no-text base images only.
+- QA report distinguishes no-text base images from final text-overlaid upload images.
+- Contact sheet or equivalent overview exists.
 
 ## Required Delivery Items
 
@@ -55,6 +58,9 @@ fable-one-draft-output/
 - Zhihu image insertion plan.
 - Contact sheet.
 - QA report.
+- Image generation status report stating whether Image2 / image generation was actually called.
+
+If image generation is unavailable, the delivery must explicitly state that images were not generated and must not include fake image paths.
 
 ## Zhihu QA
 

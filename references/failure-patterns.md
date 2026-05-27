@@ -48,6 +48,18 @@ Problem: The agent generates base images but never adds Chinese narration, dialo
 
 Fix: Final Xiaohongshu delivery requires both base images and text-overlaid upload images. No-text base images alone are not complete.
 
+## Text Overlay Looks Like Caption Blocks
+
+Problem: Final images contain white caption boxes, black subtitle bars, large translucent backings, or text covering faces, hands, or key objects.
+
+Fix: Use no-background outlined text with subtle shadow. Keep text short, ideally 8-14 Chinese characters and 1-2 lines, and place it in empty scene areas.
+
+## Page 9 Turns Into A Knowledge Card
+
+Problem: The author-note page becomes a poster, PPT, quote card, or pure text page.
+
+Fix: Page 9 must still be a six-panel life-scene comic page. It can explain the mechanism, but each panel still needs a concrete scene, object, action, and overlay text.
+
 ## Leaks Private Context
 
 Problem: The output references local paths, private documents, private memory, or account environment.

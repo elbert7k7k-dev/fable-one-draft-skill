@@ -29,7 +29,7 @@ Avoid:
 
 ## Real Image Generation Priority
 
-If an actual image generation tool is available, use it to generate real scene comic images. If no image generation tool is available, say so clearly and provide complete image worker prompts.
+If an actual image generation tool is available, use it to generate real scene comic images. Do not only write prompts. If no image generation tool is available, say so clearly and provide complete image worker prompts.
 
 Do not use local scripts, SVG, ASCII art, geometric drawing, or placeholders as final images.
 
@@ -44,6 +44,7 @@ Stage 1: generate no-text base images.
 - 2 columns x 3 rows, 6 panels per page.
 - No Chinese text, no watermark, no caption boxes, no empty speech bubbles.
 - Clear story action in every page.
+- Real character movement, expressions, key objects, and scene changes.
 
 Stage 2: create final text-overlaid upload images.
 
@@ -51,6 +52,7 @@ Stage 2: create final text-overlaid upload images.
 - Use no-background outlined text.
 - Do not use white boxes, black bars, or large translucent backings.
 - Output 9 final upload images.
+- Final delivery is not complete until all 9 final upload images exist.
 
 Only if image generation is unavailable should the skill output image worker prompts instead.
 
@@ -75,6 +77,8 @@ Default subtitle style is no-background outlined text:
 - Put text in empty scene areas.
 - Do not cover faces, hand actions, key objects, or panel borders.
 - Keep each panel short, ideally 8-14 Chinese characters and 1-2 lines.
+
+Each final upload page must use the corresponding no-text base image as visual source. Do not make final pages from SVG, ASCII, script drawings, PPT graphics, knowledge cards, or placeholders.
 
 ## If Images Are Not Generated
 

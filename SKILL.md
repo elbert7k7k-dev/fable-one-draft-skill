@@ -30,8 +30,8 @@ Produce:
 5. Three story directions and auto-selected best direction.
 6. Xiaohongshu 9-page comic script, 6 panels per page, page 9 as author note.
 7. Realistic-scene image prompts and negative prompts.
-8. If an actual Image2 / image generation tool is available, call it to generate 9 no-text base comic pages.
-9. After base pages are generated, add Chinese captions/dialogue and produce 9 final text-overlaid upload pages.
+8. If an actual Image2 / image generation tool is available, call it directly to generate 9 no-text base comic pages. Do not only write prompts.
+9. After base pages are generated, add Chinese captions/dialogue and produce 9 final text-overlaid upload pages. Do not stop at no-text base pages.
 10. Text overlay instructions using no-background outlined text.
 11. Xiaohongshu publishing copy.
 12. Zhihu fable article derived from the same comic story.
@@ -47,6 +47,7 @@ Produce:
 - Do not use local script drawings, SVG, ASCII art, geometric placeholders, PPT graphics, or concept cards as final comic images.
 - Do not claim images exist if they were not actually generated.
 - Do not stop at no-text base images. Final Xiaohongshu delivery requires both no-text base images and final Chinese text-overlaid upload images.
+- Do not treat image worker prompts as image delivery when an actual image generation tool is available.
 
 ## Automation Rule
 
@@ -64,6 +65,7 @@ Generate each page separately:
 - Chinese realistic low-saturation watercolor comic style.
 - Real adults and real Chinese daily-life environments.
 - No text, no watermark, no caption boxes in the base image.
+- Clear story action, real character movement, expressions, key objects, and scene changes on every page.
 
 Then complete the second stage:
 
@@ -73,3 +75,12 @@ Then complete the second stage:
 - Output 9 final upload images.
 
 If the image tool is unavailable, explicitly say so and output complete image worker prompts, negative prompts, overlay text list, and QA criteria.
+
+Each 9-page script must include 6 panel actions, per-panel overlay text, a page-level summary subtitle, character actions, expressions, key objects, and scene changes. Page 9 is an author-note page but must still be a six-panel life-scene comic page, not a knowledge card.
+
+Final delivery is incomplete until both stages exist:
+
+1. 9 no-text base images.
+2. 9 final text-overlaid upload images.
+
+If generated pages are not six-panel comic pages, not realistic life scenes, severely broken, or contain garbled text, regenerate the affected page. If repeated attempts fail, record the failure in QA and do not pass low-quality images as final output.

@@ -18,8 +18,8 @@ Avoid political, disaster, criminal, privacy, minor-related, medical, financial,
 6. Auto-select the best direction.
 7. Xiaohongshu 9-page comic script.
 8. Image prompts and negative prompts.
-9. If Image2 / image generation is available, generate 9 no-text base images.
-10. Add Chinese text overlays and produce 9 final upload images.
+9. If Image2 / image generation is available, call the image tool directly and generate 9 no-text base images.
+10. Add Chinese text overlays and produce 9 final upload images. Do not stop at no-text base images.
 11. Text overlay instructions.
 12. Xiaohongshu publishing copy.
 13. Zhihu fable article.
@@ -36,6 +36,7 @@ Avoid political, disaster, criminal, privacy, minor-related, medical, financial,
 - The story should use concrete people, scenes, objects, and actions instead of abstract explanation.
 - Each page must include 6 panel actions, per-panel overlay text, a page-level summary subtitle, character actions, expressions, key objects, and scene changes.
 - Page 9 is still a six-panel life-scene comic page, not a pure knowledge card.
+- When image generation is available, image prompts are not the final output. The workflow must actually produce both no-text base images and final text-overlaid upload images.
 
 ## Zhihu Structure
 
