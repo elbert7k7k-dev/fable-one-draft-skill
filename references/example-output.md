@@ -38,7 +38,18 @@ Title: 过度准备，是把安全感误认为进度
 
 Sometimes we are not lazy. We are just always preparing. But the first real customer comment can change more than the eighteenth version of a plan.
 
+Required file outputs:
+
+- `xiaohongshu/05-publishing-copy.md`
+- `xiaohongshu/05-publishing-copy.html`
+
 ## Zhihu Title Sample
 
 那个写了十八版菜单的人，输给了一张旧折叠桌
 
+Required file outputs:
+
+- `zhihu/01-zhihu-fable-article.md`
+- `zhihu/01-zhihu-fable-article-image-insertion.html`
+
+If final comic images exist, the Zhihu HTML must insert the 9 comic images in the story body before "作者的话".

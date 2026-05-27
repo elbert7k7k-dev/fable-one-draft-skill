@@ -33,8 +33,8 @@ Produce:
 8. If an actual Image2 / image generation tool is available, call it directly to generate 9 no-text base comic pages. Do not only write prompts.
 9. After base pages are generated, add Chinese captions/dialogue and produce 9 final text-overlaid upload pages. Do not stop at no-text base pages.
 10. Text overlay instructions using no-background outlined text.
-11. Xiaohongshu publishing copy.
-12. Zhihu fable article derived from the same comic story.
+11. Xiaohongshu publishing copy in both Markdown and standalone HTML.
+12. Zhihu fable article derived from the same comic story in Markdown and an HTML image-insertion edition.
 13. Zhihu image insertion suggestions.
 14. Delivery folder structure.
 15. QA checklist.
@@ -48,6 +48,8 @@ Produce:
 - Do not claim images exist if they were not actually generated.
 - Do not stop at no-text base images. Final Xiaohongshu delivery requires both no-text base images and final Chinese text-overlaid upload images.
 - Do not treat image worker prompts as image delivery when an actual image generation tool is available.
+- Do not mark the workflow complete if only images or only Markdown files were produced.
+- A complete pass requires actual Xiaohongshu publishing-copy HTML and actual Zhihu image-insertion HTML, or an explicit failure/pending note if the environment cannot create files.
 
 ## Automation Rule
 
@@ -82,5 +84,12 @@ Final delivery is incomplete until both stages exist:
 
 1. 9 no-text base images.
 2. 9 final text-overlaid upload images.
+
+Full workflow delivery is incomplete until these publish files also exist:
+
+1. Xiaohongshu publishing-copy HTML, containing title options, main copy, short copy, pinned comment, topic keyword list, display hashtags, image path list, and publish reminder.
+2. Zhihu fable article HTML image-insertion edition, containing the full fable, one "作者的话" section, and the 9 comic images inserted as `<figure><img></figure>` when final upload images exist.
+
+Markdown backups are useful, but Markdown alone is not a complete delivery.
 
 If generated pages are not six-panel comic pages, not realistic life scenes, severely broken, or contain garbled text, regenerate the affected page. If repeated attempts fail, record the failure in QA and do not pass low-quality images as final output.

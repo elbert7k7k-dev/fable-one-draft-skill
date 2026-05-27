@@ -65,3 +65,15 @@ Fix: Page 9 must still be a six-panel life-scene comic page. It can explain the 
 Problem: The output references local paths, private documents, private memory, or account environment.
 
 Fix: Treat the user as an external user and rely only on the provided public skill.
+
+## Images Complete But Publishing Files Missing
+
+Problem: The image chain succeeds, but the delivery contains no Xiaohongshu publishing-copy HTML or no Zhihu HTML image-insertion edition.
+
+Fix: The workflow is incomplete. Generate the missing HTML files and update QA to verify their actual existence. Images alone cannot pass the complete delivery gate.
+
+## Markdown Only Delivery
+
+Problem: The agent writes Xiaohongshu copy or Zhihu article only as Markdown and marks the run complete.
+
+Fix: Markdown is only a backup/readable source. Complete delivery requires standalone Xiaohongshu HTML and Zhihu fable HTML image-insertion edition.

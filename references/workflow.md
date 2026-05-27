@@ -21,11 +21,11 @@ Avoid political, disaster, criminal, privacy, minor-related, medical, financial,
 9. If Image2 / image generation is available, call the image tool directly and generate 9 no-text base images.
 10. Add Chinese text overlays and produce 9 final upload images. Do not stop at no-text base images.
 11. Text overlay instructions.
-12. Xiaohongshu publishing copy.
-13. Zhihu fable article.
+12. Xiaohongshu publishing copy in Markdown and standalone HTML.
+13. Zhihu fable article in Markdown and HTML image-insertion edition.
 14. Zhihu image insertion plan.
 15. Delivery structure.
-16. QA checklist.
+16. QA checklist that verifies required HTML files actually exist.
 
 ## Comic Structure
 
@@ -41,3 +41,14 @@ Avoid political, disaster, criminal, privacy, minor-related, medical, financial,
 ## Zhihu Structure
 
 Zhihu article must be derived from the comic story. Use a story-like title. Tell the complete fable first. Do not insert explanatory headings in the middle of the story. After the story, add one section called "作者的话" to explain the concept, mechanism, boundary, and reader reminder.
+
+## Publishing File Rule
+
+The workflow cannot be marked complete with images only or Markdown only.
+
+The final delivery must include:
+
+- A standalone Xiaohongshu publishing-copy HTML file.
+- A Zhihu fable article HTML image-insertion edition.
+
+If final Xiaohongshu upload images exist, the Zhihu HTML image-insertion edition must insert all 9 comic images in the story body before "作者的话" using `<figure><img></figure>` or an equivalent HTML structure. If images were not generated, the Zhihu HTML must be clearly marked as pending image backfill and include an insertion plan instead of fake image paths.
