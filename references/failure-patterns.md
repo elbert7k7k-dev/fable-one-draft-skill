@@ -77,3 +77,9 @@ Fix: The workflow is incomplete. Generate the missing HTML files and update QA t
 Problem: The agent writes Xiaohongshu copy or Zhihu article only as Markdown and marks the run complete.
 
 Fix: Markdown is only a backup/readable source. Complete delivery requires standalone Xiaohongshu HTML and Zhihu fable HTML image-insertion edition.
+
+## Missing Zhihu Topic Or Submission Recommendation
+
+Problem: The run produces the Zhihu article but omits the publishing-side recommendation: search keywords, topics, and submission direction.
+
+Fix: Add a Zhihu topic/submission plan with search keywords, exactly 3 recommended topic keywords, exactly 1 submission question/direction, and reasons. If live Zhihu browsing is unavailable, mark it as pending final verification instead of inventing heat data.

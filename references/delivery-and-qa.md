@@ -25,6 +25,7 @@ fable-one-draft-output/
     01-zhihu-fable-article.md
     01-zhihu-fable-article-image-insertion.html
     02-image-insertion-plan.md
+    03-zhihu-topic-submission-plan.md
   qa/
     01-qa-checklist.md
 ```
@@ -63,6 +64,7 @@ fable-one-draft-output/
 - Zhihu fable article.
 - Zhihu fable article HTML image-insertion edition.
 - Zhihu image insertion plan.
+- Zhihu topic/submission recommendation plan.
 - Contact sheet.
 - QA report.
 - Image generation status report stating whether Image2 / image generation was actually called.
@@ -81,6 +83,9 @@ If image generation is unavailable, the delivery must explicitly state that imag
 - Image insertions appear in the fable story body before "作者的话".
 - Markdown-only Zhihu article is not treated as a complete delivery.
 - No fake image references.
+- Zhihu topic/submission recommendation plan exists.
+- The plan contains search keywords, exactly 3 topic keywords, exactly 1 submission question/direction, and selection reasons.
+- The plan does not claim live Zhihu heat data unless it was actually checked.
 
 ## Complete Pass Gate
 
@@ -91,9 +96,10 @@ The run can be marked as a complete pass only if all of these are true:
 - Contact sheet exists.
 - Xiaohongshu publishing-copy HTML exists.
 - Zhihu fable article HTML image-insertion edition exists.
+- Zhihu topic/submission recommendation plan exists.
 - QA report explicitly checks the existence of the two HTML files.
 
-If any required HTML file is missing, mark the delivery as incomplete even if all images were generated.
+If any required HTML file or the Zhihu topic/submission plan is missing, mark the delivery as incomplete even if all images were generated.
 
 ## Safety QA
 

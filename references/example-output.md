@@ -51,5 +51,27 @@ Required file outputs:
 
 - `zhihu/01-zhihu-fable-article.md`
 - `zhihu/01-zhihu-fable-article-image-insertion.html`
+- `zhihu/03-zhihu-topic-submission-plan.md`
 
 If final comic images exist, the Zhihu HTML must insert the 9 comic images in the story body before "作者的话".
+
+## Zhihu Publishing Recommendation Sample
+
+Search keywords:
+
+- 过度准备
+- 行动力
+- 拖延
+- 反馈
+
+Recommended topics:
+
+1. 行动力
+2. 拖延症
+3. 自我提升
+
+Recommended submission direction:
+
+- 投稿至问题方向：如何从过度准备走向实际行动？
+
+Reason: The article is about mistaking preparation for progress, so mechanism topics are better than surface objects like breakfast stands or menus.

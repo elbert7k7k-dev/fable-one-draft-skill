@@ -36,8 +36,9 @@ Produce:
 11. Xiaohongshu publishing copy in both Markdown and standalone HTML.
 12. Zhihu fable article derived from the same comic story in Markdown and an HTML image-insertion edition.
 13. Zhihu image insertion suggestions.
-14. Delivery folder structure.
-15. QA checklist.
+14. Zhihu publishing recommendation pack: search keywords, 3 topic keywords, 1 submission question/direction, and selection reasons.
+15. Delivery folder structure.
+16. QA checklist.
 
 ## Hard Boundaries
 
@@ -91,5 +92,13 @@ Full workflow delivery is incomplete until these publish files also exist:
 2. Zhihu fable article HTML image-insertion edition, containing the full fable, one "作者的话" section, and the 9 comic images inserted as `<figure><img></figure>` when final upload images exist.
 
 Markdown backups are useful, but Markdown alone is not a complete delivery.
+
+Zhihu publishing recommendation is also required. The workflow must output a Zhihu topic/submission plan containing:
+
+1. Search keywords to try in Zhihu publishing UI.
+2. Exactly 3 recommended topic keywords, ordered by relevance.
+3. Exactly 1 recommended submission question/direction.
+4. A short reason for each topic and the submission direction.
+5. A safety note: do not log in, do not click publish, and do not read credentials.
 
 If generated pages are not six-panel comic pages, not realistic life scenes, severely broken, or contain garbled text, regenerate the affected page. If repeated attempts fail, record the failure in QA and do not pass low-quality images as final output.

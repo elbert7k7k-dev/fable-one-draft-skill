@@ -24,8 +24,9 @@ Avoid political, disaster, criminal, privacy, minor-related, medical, financial,
 12. Xiaohongshu publishing copy in Markdown and standalone HTML.
 13. Zhihu fable article in Markdown and HTML image-insertion edition.
 14. Zhihu image insertion plan.
-15. Delivery structure.
-16. QA checklist that verifies required HTML files actually exist.
+15. Zhihu publishing recommendation pack.
+16. Delivery structure.
+17. QA checklist that verifies required HTML files and Zhihu publishing recommendation file actually exist.
 
 ## Comic Structure
 
@@ -52,3 +53,16 @@ The final delivery must include:
 - A Zhihu fable article HTML image-insertion edition.
 
 If final Xiaohongshu upload images exist, the Zhihu HTML image-insertion edition must insert all 9 comic images in the story body before "作者的话" using `<figure><img></figure>` or an equivalent HTML structure. If images were not generated, the Zhihu HTML must be clearly marked as pending image backfill and include an insertion plan instead of fake image paths.
+
+## Zhihu Publishing Recommendation Rule
+
+Before the final QA, output a Zhihu publishing recommendation pack. It is not platform publishing and must not click any publish button.
+
+The pack must contain:
+
+- Search keywords: topic term, title keywords, mechanism keywords, and 1-3 body keywords.
+- Exactly 3 recommended topic keywords that the user can type into Zhihu topic selection.
+- Exactly 1 recommended submission question/direction for `投稿至问题` or, if no suitable question is available, a clear recommendation to use topic selection instead.
+- Reasons based on article mechanism, relevance, risk boundary, and expected reader intent.
+
+If live Zhihu browsing is unavailable, infer conservatively from the article mechanism and clearly mark the recommendation as "待发布时复核". Do not invent heat numbers.
