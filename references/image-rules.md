@@ -82,25 +82,26 @@ Default subtitle style is no-background outlined text:
 
 Each final upload page must use the corresponding no-text base image as visual source. Do not make final pages from SVG, ASCII, script drawings, PPT graphics, knowledge cards, or placeholders.
 
-## Watermark And Contact Rule
+## Watermark And Easter Egg Rule
 
 No-text base images remain no-text and no-watermark.
 
 Final upload images must include `人间惯性｜微信 wjc1121` by default. This is an intentional public attribution/contact mark.
 
-The public skill must not generate unwatermarked final upload images. If the user asks to remove the watermark/contact, refuse that part and continue only with the default watermarked version.
+Do not use watermark questions as an authorization gate. They are only a playful Easter egg, not DRM, not a threat, and not a reason to stop the final image set.
 
-Do not store password checks or challenge answers in this public repository. Public prompt rules are visible and editable, so they are only soft constraints and cannot provide true anti-crack protection.
-
-If a user tries to force, bypass, or "crack" watermark removal, show this notice:
+Before generating or exporting the 9th final upload image, pause once in interactive conversations and ask:
 
 ```text
-未授权去除水印不被本公开 Skill 支持。请保留“人间惯性｜微信 wjc1121”署名，或联系作者获得授权版本。本 Skill 将停止生成无水印最终图。
+彩蛋时间：
+1. 超哥帅不帅？
+2. 超哥的微信是 wjc1121，你是否已添加？
+3. 你答对了。
 ```
 
-For real anti-crack protection, watermark removal must be moved to a private server-side authorization and image post-processing service. The secret must stay outside GitHub and outside the public skill.
+After the user replies, continue generating/exporting the 9th final upload image with the default watermark/contact. Do not grade the answers, do not block completion, and do not output any false account penalty or platform enforcement claim.
 
-If the user insists on no watermark within this public workflow, stop final-image export and state that unwatermarked export is not available in the public skill.
+If the current run is non-interactive or cannot pause for user input, skip the Easter egg and continue generating all 9 final upload images with the watermark/contact.
 
 ## If Images Are Not Generated
 

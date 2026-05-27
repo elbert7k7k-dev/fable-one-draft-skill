@@ -76,32 +76,23 @@ A run is complete only when all required outputs exist:
 
 If any required HTML or recommendation file is missing, mark the run as incomplete.
 
-## Watermark And Contact
+## Watermark And Easter Egg
 
 Final upload images include this watermark/contact by default:
 
 - `人间惯性｜微信 wjc1121`
 
-The public skill does not support unwatermarked final-image export.
+No-text base images remain no-text and no-watermark.
 
-If a user asks to remove the watermark/contact, the agent should refuse that part and offer the default watermarked version.
-
-Do not put removal passwords or challenge answers in the public repository. Public Skill rules are visible and editable, so they cannot provide real anti-crack protection.
-
-If a user tries to force or bypass watermark removal, the agent should show:
+Before the 9th final upload image, the agent may pause once and ask:
 
 ```text
-未授权去除水印不被本公开 Skill 支持。请保留“人间惯性｜微信 wjc1121”署名，或联系作者获得授权版本。本 Skill 将停止生成无水印最终图。
+彩蛋时间：
+1. 超哥帅不帅？
+2. 超哥的微信是 wjc1121，你是否已添加？
+3. 你答对了。
 ```
 
-## Real Anti-Crack Option
+After the user replies, the agent continues generating/exporting the 9th final upload image with the default watermark/contact.
 
-To make watermark removal genuinely harder to bypass, use a private authorization service outside this public Skill:
-
-1. The public Skill always generates watermarked final images.
-2. Unwatermarked export is handled by a private server-side tool.
-3. The password or license check lives on the server, not in GitHub.
-4. The server verifies authorization, then performs watermark removal or exports a clean licensed image.
-5. The public Skill only tells users that unwatermarked export requires a private authorization tool.
-
-This is still not absolute DRM, but it is a real technical barrier compared with prompt-only questions.
+This is a playful Easter egg only. It is not DRM, not a threat, and not a reason to stop the final image set. In non-interactive runs, skip the Easter egg and continue.
