@@ -24,7 +24,7 @@ Avoid political, disaster, criminal, privacy, minor-related, medical, financial,
 12. Xiaohongshu publishing copy in Markdown and standalone HTML.
 13. Zhihu fable article in Markdown and HTML image-insertion edition.
 14. Zhihu image insertion plan.
-15. Zhihu publishing recommendation pack.
+15. Zhihu publishing recommendation pack in Markdown and standalone HTML.
 16. Delivery structure.
 17. QA checklist that verifies required HTML files and Zhihu publishing recommendation file actually exist.
 
@@ -56,13 +56,18 @@ If final Xiaohongshu upload images exist, the Zhihu HTML image-insertion edition
 
 ## Zhihu Publishing Recommendation Rule
 
-Before the final QA, output a Zhihu publishing recommendation pack. It is not platform publishing and must not click any publish button.
+Before the final QA, output a Zhihu publishing recommendation pack in both Markdown and standalone HTML. It is not platform publishing and must not click any publish button.
 
-The pack must contain:
+Both the Markdown and HTML versions must contain:
 
 - Search keywords: topic term, title keywords, mechanism keywords, and 1-3 body keywords.
 - Exactly 3 recommended topic keywords that the user can type into Zhihu topic selection.
 - Exactly 1 recommended submission question/direction for `投稿至问题` or, if no suitable question is available, a clear recommendation to use topic selection instead.
 - Reasons based on article mechanism, relevance, risk boundary, and expected reader intent.
+- Recommended tags/keywords for manual pre-publish checking.
+- A "待发布时复核" mark when live Zhihu candidates were not actually checked.
+- Safety boundary: do not log in to Zhihu, do not click publish, and do not read tokens, cookies, verification codes, QR codes, passwords, or browser credentials.
 
 If live Zhihu browsing is unavailable, infer conservatively from the article mechanism and clearly mark the recommendation as "待发布时复核". Do not invent heat numbers.
+
+The standalone HTML exists to help the user manually check Zhihu upload options before publishing. If the Zhihu publishing recommendation HTML is missing, the delivery is incomplete even if all images, Xiaohongshu HTML, and Zhihu article HTML were generated.

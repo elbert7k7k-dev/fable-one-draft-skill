@@ -26,6 +26,7 @@ fable-one-draft-output/
     01-zhihu-fable-article-image-insertion.html
     02-image-insertion-plan.md
     03-zhihu-topic-submission-plan.md
+    03-zhihu-topic-submission-plan.html
   qa/
     01-qa-checklist.md
 ```
@@ -64,7 +65,8 @@ fable-one-draft-output/
 - Zhihu fable article.
 - Zhihu fable article HTML image-insertion edition.
 - Zhihu image insertion plan.
-- Zhihu topic/submission recommendation plan.
+- Zhihu topic/submission recommendation plan Markdown.
+- Zhihu topic/submission recommendation plan HTML.
 - Contact sheet.
 - QA report.
 - Image generation status report stating whether Image2 / image generation was actually called.
@@ -83,8 +85,11 @@ If image generation is unavailable, the delivery must explicitly state that imag
 - Image insertions appear in the fable story body before "作者的话".
 - Markdown-only Zhihu article is not treated as a complete delivery.
 - No fake image references.
-- Zhihu topic/submission recommendation plan exists.
-- The plan contains search keywords, exactly 3 topic keywords, exactly 1 submission question/direction, and selection reasons.
+- Zhihu topic/submission recommendation plan Markdown exists.
+- Zhihu topic/submission recommendation plan HTML exists.
+- The recommendation HTML contains search keywords, exactly 3 topic keywords, exactly 1 submission question/direction, recommended tags/keywords, and selection reasons.
+- The recommendation HTML contains "待发布时复核" when live Zhihu candidates were not actually checked.
+- The recommendation HTML includes the safety boundary: no Zhihu login, no publish click, and no reading tokens, cookies, verification codes, QR codes, passwords, or browser credentials.
 - The plan does not claim live Zhihu heat data unless it was actually checked.
 
 ## Complete Pass Gate
@@ -96,10 +101,13 @@ The run can be marked as a complete pass only if all of these are true:
 - Contact sheet exists.
 - Xiaohongshu publishing-copy HTML exists.
 - Zhihu fable article HTML image-insertion edition exists.
-- Zhihu topic/submission recommendation plan exists.
-- QA report explicitly checks the existence of the two HTML files.
+- Zhihu topic/submission recommendation plan Markdown exists.
+- Zhihu topic/submission recommendation plan HTML exists.
+- QA report explicitly checks the existence of the Xiaohongshu HTML, Zhihu article HTML, Zhihu recommendation Markdown, and Zhihu recommendation HTML.
 
-If any required HTML file or the Zhihu topic/submission plan is missing, mark the delivery as incomplete even if all images were generated.
+If the Zhihu publishing recommendation HTML is missing, mark the delivery as incomplete even if all images, the Zhihu article HTML, and the Xiaohongshu publishing-copy HTML were generated.
+
+If any required HTML file or the Zhihu topic/submission plan Markdown is missing, mark the delivery as incomplete even if all images were generated.
 
 ## Safety QA
 
